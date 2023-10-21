@@ -10,7 +10,6 @@ some notes for git learners
    ```
    git init
    ```
-   - `git init`: Initialize a new Git repository.
 
 2. **Check the Status:**
 
@@ -18,7 +17,6 @@ some notes for git learners
    ```
    git status
    ```
-   - `git status`: Check the status of the project.
 
 3. **Add Files to the Staging Area:**
 
@@ -33,7 +31,11 @@ some notes for git learners
      ```
      git add "*.html"
      ```
-   - `git add`: Add files to the stage.
+
+   - Add specific file :
+     ```
+     git add "file-name"
+     ```
 
 4. **Commit Changes:**
 
@@ -57,7 +59,6 @@ some notes for git learners
      ```
      git diff --staged
      ```
-   - `git diff`: Show the difference between different states of files.
 
 6. **Reset and Exit the Staging Area:**
 
@@ -65,7 +66,6 @@ some notes for git learners
    ```
    git reset 'filename'
    ```
-   - `git reset 'filename'`: Remove a file from the staging area.
 
 7. **Restore a File to Its Previous State:**
 
@@ -73,6 +73,5 @@ some notes for git learners
    ```
    git checkout -- 'filename'
    ```
-   - `git checkout -- 'filename'`: Restore the file to the state in the last commit.
 
 Remember to use these commands as needed in your Git projects. It's important to maintain a clean and organized version control process for effective collaboration and project management.
