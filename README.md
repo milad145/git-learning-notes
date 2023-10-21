@@ -1,7 +1,6 @@
 # git-learning-notes
 some notes for git learners
 
-Of course, I can help you convert your notes into a more organized document. Here's a cleaned-up version of your Git class notes:
 
 # Git Commands
 
