@@ -252,5 +252,12 @@ git push --set-upstream origin <local-branch>
       git push origin --tags
       ```
 
+23. **Switch to a Tag:**
+
+    To switch to a specific tag, use:
+    ```
+    git switch <tag-name>
+    ```
+
 Remember to use these commands as needed in your Git projects. It's important to maintain a clean and organized version
 control process for effective collaboration and project management.
