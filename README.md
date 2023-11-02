@@ -168,5 +168,89 @@ some notes for git learners
     git pull origin master
     ```
 
+15. **Clone a Repository:**
+
+   To copy an existing repository from a remote location (like GitHub) to your local machine, use:
+   ```
+git clone <repository_URL>
+   ```
+
+16. **Push Changes to Remote:**
+
+   To send committed changes from your local repository to the remote server, use:
+   ```
+git push
+   ```
+
+17. **Add Remote Repository:**
+
+   To add a remote address to your current project on your local machine, use:
+   ```
+git remote add origin <remote_URL>
+   ```
+
+18. **Change Remote URL:**
+
+   To replace the current remote URL with a new one, use:
+   ```
+git remote set-url origin <new_remote_URL>
+   ```
+
+19. **Pull Changes from Remote:**
+
+   To fetch and merge changes from the remote server into your local branch, use:
+   ```
+git pull origin main
+   ```
+
+20. **Set Upstream Branch:**
+
+   To track a remote branch, use:
+   ```
+git branch --set-upstream-to=origin/main main
+   ```
+
+21. **Push with Upstream:**
+
+   To push the current branch and set the remote as the upstream branch, use:
+   ```
+git push --set-upstream origin <local-branch>
+   ```
+
+22. **Tagging:**
+
+    Tags are used to mark specific points in the commit history. 
+    **also you can make versions for your application**
+
+    - Show all tags:
+      ```
+      git tag
+      ```
+
+    - Create a tag for the last commit:
+      ```
+      git tag -a <tag-name or version-number> -m "Your message"
+      ```
+
+    - Create a tag for a specific commit:
+      ```
+      git tag -a <version-number> <commit-id> -m "Your message"
+      ```
+
+    - Search between tags (e.g., tags starting with 'v0'):
+      ```
+      git tag -l 'v0*'
+      ```
+
+    - Push a specific tag to the remote:
+      ```
+      git push origin <tag-name>
+      ```
+
+    - Push all tags to the remote:
+      ```
+      git push origin --tags
+      ```
+
 Remember to use these commands as needed in your Git projects. It's important to maintain a clean and organized version
 control process for effective collaboration and project management.
