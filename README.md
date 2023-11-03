@@ -304,5 +304,17 @@ some notes for git learners
       git tag -v 'tag-name or version-number'
       ```
 
+24. **Blame History:**
+
+    - Show all the change history about your file:
+      ```
+      git blame 'filename'
+      ```
+    - Show all the change history about your requested line in the requested file:
+      ```
+      git blame 'filename' -L5
+      ```
+    - Git Blame is useful for tracing the changes made to a file, and using the `-L` parameter, you can specify a specific line range to investigate. It helps in understanding who made the changes and when they were made, which can be valuable for tracking alterations, identifying contributors, and understanding the evolution of the codebase.
+
 Remember to use these commands as needed in your Git projects. It's important to maintain a clean and organized version
 control process for effective collaboration and project management.
