@@ -170,52 +170,52 @@ some notes for git learners
 
 15. **Clone a Repository:**
 
-   To copy an existing repository from a remote location (like GitHub) to your local machine, use:
-   ```
-git clone <repository_URL>
-   ```
+    To copy an existing repository from a remote location (like GitHub) to your local machine, use:
+    ```
+    git clone <repository_URL>
+    ```
 
 16. **Push Changes to Remote:**
 
-   To send committed changes from your local repository to the remote server, use:
-   ```
-git push
-   ```
+    To send committed changes from your local repository to the remote server, use:
+    ```
+    git push
+    ```
 
 17. **Add Remote Repository:**
 
-   To add a remote address to your current project on your local machine, use:
-   ```
-git remote add origin <remote_URL>
-   ```
+    To add a remote address to your current project on your local machine, use:
+    ```
+    git remote add origin <remote_URL>
+    ```
 
 18. **Change Remote URL:**
 
-   To replace the current remote URL with a new one, use:
-   ```
-git remote set-url origin <new_remote_URL>
-   ```
+    To replace the current remote URL with a new one, use:
+    ```
+    git remote set-url origin <new_remote_URL>
+    ```
 
 19. **Pull Changes from Remote:**
 
-   To fetch and merge changes from the remote server into your local branch, use:
-   ```
-git pull origin main
-   ```
+    To fetch and merge changes from the remote server into your local branch, use:
+    ```
+    git pull origin main
+    ```
 
 20. **Set Upstream Branch:**
 
-   To track a remote branch, use:
-   ```
-git branch --set-upstream-to=origin/main main
-   ```
+    To track a remote branch, use:
+    ```
+    git branch --set-upstream-to=origin/main main
+    ```
 
 21. **Push with Upstream:**
 
-   To push the current branch and set the remote as the upstream branch, use:
-   ```
-git push --set-upstream origin <local-branch>
-   ```
+    To push the current branch and set the remote as the upstream branch, use:
+     ```
+     git push --set-upstream origin <local-branch>
+     ```
 
 22. **Tagging:**
 
@@ -252,12 +252,57 @@ git push --set-upstream origin <local-branch>
       git push origin --tags
       ```
 
-23. **Switch to a Tag:**
+    - Switch to a Tag:
+      ```
+      git switch <tag-name>
+      ```
+    - Verify your tag:
+      ```
+      git tag -v <tag-name or version-number>
+      ```
 
-    To switch to a specific tag, use:
-    ```
-    git switch <tag-name>
-    ```
+23. **GPG Keys and Commit Signing:**
+
+    - Show all keys:
+      ```
+      gpg --list-keys
+      ```
+    - Generate a new key:
+      ```
+      gpg --gen-key
+      ```
+    - Show my secret keys:
+      ```
+      gpg --list-secret-keys --keyid-format LONG
+      ```
+    - Set your signing key for this project:
+      ```
+      git config user.signingKey 'your-secret-key'
+      ```
+    - Show your signing key for this project:
+      ```
+      git config user.signingKey
+      ```
+
+    - Set a global signing key for all projects:
+      ```
+      git config user.signingKey 'your-secret-key' --global
+      ```
+
+    - Sign your version/tag:
+      ```
+      git tag -s 'version-number' -m "your-message"
+      ```
+
+    - Sign your commit:
+      ```
+      git commit -S -m 'your-message'
+      ```
+
+    - Verify your tag:
+      ```
+      git tag -v 'tag-name or version-number'
+      ```
 
 Remember to use these commands as needed in your Git projects. It's important to maintain a clean and organized version
 control process for effective collaboration and project management.
